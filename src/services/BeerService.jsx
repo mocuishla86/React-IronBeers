@@ -28,7 +28,7 @@ export default class BeerService{
   }
 
   getRandomBeer = (id) => {
-    return this.service.get('/random' + id)
+    return this.service.get('/random/')
     .then(res => {
       let oneBeer = res.data;
       return oneBeer;
